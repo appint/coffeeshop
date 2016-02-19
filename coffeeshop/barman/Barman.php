@@ -37,7 +37,6 @@ class Barman implements IBarman
             $positions[$value['number']] = $value['pos'];
         }
         foreach ($positions as $key => $position) {
-            //var_dump($position);
             foreach ($position as $value) {
                 $map[$value[0]][$value[1]] = $key;                
             }
